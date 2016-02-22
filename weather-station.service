@@ -1,0 +1,12 @@
+[Unit]
+Description=Weather Station Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/Scripts/weather-station.py > /home/pi/Scripts/weather-station.log 2>&1
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

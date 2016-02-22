@@ -1,0 +1,2 @@
+# ECE230-Weather-Station
+ECE230 project files for Weather Station project.  This contains the Python code to read the Arduino code data and upload to Wunderground.  This MUST be run as a SystemD service in Linux to run continuously. 
