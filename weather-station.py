@@ -11,7 +11,7 @@ port = serial.Serial("/dev/ttyAMA0", baudrate=19200, timeout=3.0)
 
 # Establish variables
 NewData = 0
-GetUrl = "http://weatherstation.wunderground.com/weatherstation/updateweatherstation.php?ID=KINTERRE25&PASSWORD=brookSrunninG13&dateutc=now&action=updateraw"
+GetUrl = "http://weatherstation.wunderground.com/weatherstation/updateweatherstation.php?ID=KINTERRE25&PASSWORD=<password>&dateutc=now&action=updateraw"
 
 while(True):
 	# Data acquisition from Xbee through serial
